@@ -1,0 +1,15 @@
+.Konyv {
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+h3 {
+    min-height: 30px;
+    margin-top: 0;
+    background-color: gray;
+}
+
+p {
+    min-height: 20px;
+}
