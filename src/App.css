@@ -14,8 +14,7 @@
 }
 
 article {
-  min-height: 70vh;
-
+  min-height: 60vh;
   display: flex;
   flex-direction: row;
 }
@@ -24,3 +23,12 @@ footer {
   min-height: 10vh;
   background-color: pink;
 }
+
+/* table {
+  min-width: 100px;
+  margin: auto;
+}
+
+table * {
+  border: 1px solid black;
+} */

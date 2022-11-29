@@ -9,16 +9,21 @@ import './Konyv.css';
 
 // Paraméternek bármilyen nevet adhatunk
 function Konyv(props) {
-    function kosarba() {
-        console.log(props.konyvObj);
-        props.kosarKezelesFuggveny(props.konyvObj);
+    function kosarKezeles() {
+        // console.log(props.konyvObj);
+        // props.kosarKezelesFuggveny(props.konyvObj);
+        
+        // Az App.js kosárkezelésének hívása:
+        props.kosarKezeles(props.konyvObj);
     }
+
     return (
         <div className="Konyv">
             <h3 className="cim">{props.konyvObj.cim}</h3>
             <p className="szerzo">{props.konyvObj.szerzo}</p>
             <p className="ar">{props.konyvObj.ar} Ft</p>
-            <button onClick={kosarba}>Kosárba</button>
+            {/* A Konyv komponens kosárkezelésének a hívása */}
+            <button onClick={kosarKezeles}>Kosárba</button>
         </div>
     );
 }
